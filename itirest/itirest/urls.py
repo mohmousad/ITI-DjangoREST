@@ -19,7 +19,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('pinterest/', include('pinterest.api.v1.urls'))
+    path('pinterest/', include('pinterest.api.v1.urls')),
+    path('users/', include('accounts.urls')),
 ]
 
 
